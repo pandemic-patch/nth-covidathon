@@ -1,6 +1,6 @@
 import MediaDevice from './MediaDevice';
-import Emitter from './Emitter';
-import socket from './socket';
+import Emitter from '../utils/Emitter';
+import socket from '../socket';
 
 const PC_CONFIG = { iceServers: [{ urls: ['stun:stun.l.google.com:19302'] }] };
 

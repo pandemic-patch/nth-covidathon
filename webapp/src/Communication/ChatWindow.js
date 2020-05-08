@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Divider, Label, Message, Card, Input, Button, Icon, Grid, Image } from 'semantic-ui-react'
-import './App.css';
 import moment from 'moment'
-import socket from './socket';
+import socket from '../socket';
 
 class ChatWindow extends Component {
   constructor(props) {

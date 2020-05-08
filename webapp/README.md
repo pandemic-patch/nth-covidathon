@@ -49,4 +49,14 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## TESTING CLONE 123
 
-The cloned repo is syncing just fine. 
+The cloned repo is syncing just fine.
+
+# Updated Structure
+
+## Domain Driven Development (DDD):
+
+Folders are directly related to higher order data elements, for example Patient/ folder will contain all the views and all the acitons that a patient can take.
+
+## New Testing Scheme:
+
+Fairly simple testing using jest and enzyme, the best example is in the `App.test.js` so use that for reference.
