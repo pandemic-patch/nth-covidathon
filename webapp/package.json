@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "install": "^0.12.2",
     "lodash": "^4.17.13",
     "moment": "^2.22.2",
@@ -21,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start && node ./server/index.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --maxWorkers=2 --setupFiles ./.setupTests.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

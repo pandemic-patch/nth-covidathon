@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Emitter from './Emitter';
+import Emitter from '../utils/Emitter';
 
 /**
  * Manage all media devices

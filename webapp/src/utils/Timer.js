@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Divider, Label, Message, Card, Input, Button, Icon, Grid, Image } from 'semantic-ui-react'
-import './App.css';
 
 class Timer extends Component {
   constructor(props) {
