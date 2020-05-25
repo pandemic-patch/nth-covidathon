@@ -1,27 +1,12 @@
-import * as patientActions from './PatientActions';
+import patientReducer from './PatientReducers';
+// import * as customerActions from './CustomerActions';
 
-const initState = {
-  signedIn: false,
-  remoteDataLoaded: false,
-};
-
-const userReducers = (state = initState, action) => {
-  switch (action.type) {
-    case patientActions.GET_CURRENT_USER:
-      return {
-        ...state,
-        signedIn: true,
-        remoteDataLoaded: true,
-        ...action.user.attributes,
-      };
-    case patientActions.SIGNOUT:
-      return {
-        signedIn: false,
-        remoteDataLoaded: true,
-      };
-    default:
-      return state;
-  }
-};
-
-export default userReducers;
+describe('User Store Reducers', () => {
+  it('by default returns the state', () => {
+    const expectedValue = {
+      signedIn: false,
+      remoteDataLoaded: false,
+    };
+    expect(patientReducer(undefined, { type: 'lol' })).toEqual(expectedValue);
+  });
+});
