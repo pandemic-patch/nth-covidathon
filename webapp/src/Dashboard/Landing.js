@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
-class TutorialFlow extends Component {
-  state = {};
+export default class Landing extends Component {
   render() {
     return <div></div>;
   }
 }
-
-export default TutorialFlow;
