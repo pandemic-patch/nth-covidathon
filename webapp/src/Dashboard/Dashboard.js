@@ -3,7 +3,7 @@ import socket from '../socket';
 import { withRouter } from 'react-router-dom';
 import _ from 'lodash';
 import PeerConnection from '../Communication/PeerConnection';
-import MainWindow from '../MainWindow';
+// import MainWindow from '../MainWindow';
 import CallWindow from '../Communication/CallWindow';
 import CallModal from '../Communication/CallModal';
 import Timer from '../utils/Timer';
@@ -49,18 +49,18 @@ class Dashboard extends Component {
     this.fileEvent = this.fileEvent.bind(this);
     var self = this;
     socket
-      .on('RECEIVE_MESSAGE', function(data) {
+      .on('RECEIVE_MESSAGE', function (data) {
         console.log('RECEIVE_MESSAGE', data);
         self.addMessage(data);
         if (!self.state.showTimer) {
           self.startTimer();
         }
       })
-      .on('init', data => this.setState({ clientId: data.id }))
-      .on('request', data =>
+      .on('init', (data) => this.setState({ clientId: data.id }))
+      .on('request', (data) =>
         this.setState({ callModal: 'active', callFrom: data.from })
       )
-      .on('call', data => {
+      .on('call', (data) => {
         if (data.sdp) {
           this.pc.setRemoteDescription(data.sdp);
           if (data.sdp.type === 'offer') this.pc.createAnswer();
@@ -82,12 +82,12 @@ class Dashboard extends Component {
   startCall(isCaller, friendID, config) {
     this.config = config;
     this.pc = new PeerConnection(friendID)
-      .on('localStream', src => {
+      .on('localStream', (src) => {
         const newState = { callWindow: 'active', localSrc: src };
         if (!isCaller) newState.callModal = '';
         this.setState(newState);
       })
-      .on('peerStream', src => this.setState({ peerSrc: src }))
+      .on('peerStream', (src) => this.setState({ peerSrc: src }))
       .start(isCaller, config);
   }
 
@@ -107,7 +107,7 @@ class Dashboard extends Component {
     });
   }
 
-  addMessage = data => {
+  addMessage = (data) => {
     console.log(data);
     this.setState({ messages: [...this.state.messages, data] });
     console.log(this.state.messages);
@@ -142,11 +142,11 @@ class Dashboard extends Component {
         ),
         transactionDate: new Date(),
       })
-        .then(data => {
+        .then((data) => {
           console.log(JSON.stringify(data));
           return data;
         })
-        .then(data => {
+        .then((data) => {
           console.log('get data', typeof data);
           self.setState({
             showTimer: false,
@@ -155,7 +155,7 @@ class Dashboard extends Component {
           });
           console.log('data.qrCode', data['qrCode']);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
           self.setState({
             showTimer: false,
@@ -180,7 +180,7 @@ class Dashboard extends Component {
       redirect: 'follow', // manual, *follow, error
       referrer: 'no-referrer', // no-referrer, *client
       body: JSON.stringify(data), // body data type must match "Content-Type" header
-    }).then(response => response.json()); // parses response to JSON
+    }).then((response) => response.json()); // parses response to JSON
   }
 
   startTimer() {
@@ -194,7 +194,7 @@ class Dashboard extends Component {
     console.log(files);
     var data = files[0];
     var reader = new FileReader();
-    reader.onload = function(evt) {
+    reader.onload = function (evt) {
       // socket.emit('user image', evt.target.result);
       socket.emit('SEND_MESSAGE', {
         message: evt.target.result,
@@ -256,12 +256,12 @@ class Dashboard extends Component {
                 </Card>
               </Grid.Column>
               <Grid.Column tablet={8} computer={8} mobile={16}>
-                {isPatient && (
+                {/* {isPatient && (
                   <MainWindow
                     clientId={this.state.clientId}
                     startCall={this.startCallHandler}
                   />
-                )}
+                )} */}
                 {!this.state.callFrom && !isPatient && (
                   <Message
                     success

@@ -17,7 +17,7 @@ class AppRoutes extends Component {
             {/* <Route path='/test' component={Test} /> */}
           </Switch>
         ) : (
-          <Route path='/pandemic-patch' component={Landing} />
+          <Landing />
         )}
       </React.Fragment>
     );
