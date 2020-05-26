@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { Form, Button, Checkbox, TextArea, Label } from 'semantic-ui-react';
+import {
+  Form,
+  Button,
+  Checkbox,
+  TextArea,
+  Label,
+  Message,
+} from 'semantic-ui-react';
 
 class SignUp extends Component {
   state = {
@@ -24,7 +31,7 @@ class SignUp extends Component {
   render() {
     return (
       <div>
-        <Form>
+        <Form onSubmit={this.submitSignup} success={false} loading={false}>
           <Form.Input
             error={{
               content: 'Please enter your email',
@@ -152,9 +159,12 @@ class SignUp extends Component {
             </Label>
             <TextArea placeholder="Let's Hear It" />
           </Form.Field>
-          <Button onClick={this.submitSignup} type='submit'>
-            Submit
-          </Button>
+          <Message
+            success
+            header="Awesome! Now you're good to go."
+            content="You'll be redirected in a few seconds."
+          />
+          <Button type='submit'>Submit</Button>
         </Form>
       </div>
     );
