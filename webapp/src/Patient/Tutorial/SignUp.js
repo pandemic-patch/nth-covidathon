@@ -9,6 +9,7 @@ import {
   Card,
   Grid,
 } from 'semantic-ui-react';
+import { connect } from 'react-redux';
 
 class SignUp extends Component {
   state = {
@@ -207,5 +208,8 @@ class SignUp extends Component {
     );
   }
 }
+const mapStateToProps = state => ({
+  user: state.currentUser,
+});
 
-export default SignUp;
+export default connect(mapStateToProps)(SignUp);
