@@ -538,8 +538,7 @@ a:active {
   height: 2px;
   background: #fff;
 }
-#hero-area .block {
-}
+
 #hero-area .block p {
   color: #fff;
   font-size: 18px;
@@ -817,29 +816,20 @@ a:active {
   vertical-align: middle;
 }
 
-#contact {
-}
 hr {
   border: none;
   border-top: 1px solid #ccc;
   margin: 0 0 24px 0;
   width: 100%;
 }
-.address {
-}
+
 .address p {
   margin-bottom: 20px;
   font-size: 13px;
   line-height: 22px;
   color: #666;
 }
-#contact .form-group {
-  /* background-color: #f4f4f4;
-    margin: 0 auto;
-    padding: 80px 100px 55px;
-    width: 650px;
-    box-shadow: 0 4px 40px  rgba(0, 0, 0, 0.2); */
-}
+
 .input-field .form-control {
   height: 38px;
   margin: 0 auto;
