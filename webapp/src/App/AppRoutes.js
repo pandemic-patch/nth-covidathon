@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Dashboard from '../Dashboard/Dashboard';
 import Preview from '../Preview';
 import Landing from '../Dashboard/Landing';
+import SignUp from '../Patient/Tutorial/SignUp';
 // import Test from './Test';
 
 class AppRoutes extends Component {
@@ -17,14 +18,17 @@ class AppRoutes extends Component {
             {/* <Route path='/test' component={Test} /> */}
           </Switch>
         ) : (
-          <Landing />
+          <Switch>
+            <Route exact path='/' component={Landing} />
+            <Route path='/signUp' component={SignUp} />
+          </Switch>
         )}
       </React.Fragment>
     );
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   user: state.currentUser,
 });
 

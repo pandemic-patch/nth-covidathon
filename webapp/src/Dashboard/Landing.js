@@ -1,6 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'redux';
 
-export default class Landing extends Component {
+class Landing extends Component {
   render() {
     return (
       <div>
@@ -53,12 +56,12 @@ export default class Landing extends Component {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                   </p>
-                  <div class='wow fadeInDown' data-wow-delay='0.3s'>
-                    <a
-                      class='btn btn-default btn-home'
-                      href='#about'
-                      role='button'
-                    >
+                  <div
+                    class='wow fadeInDown'
+                    data-wow-delay='0.3s'
+                    onClick={() => this.props.history.push('/signUp')}
+                  >
+                    <a class='btn btn-default btn-home' href='#' role='button'>
                       Get Started
                     </a>
                   </div>
@@ -393,3 +396,5 @@ export default class Landing extends Component {
     );
   }
 }
+
+export default withRouter(Landing);
