@@ -911,3 +911,26 @@ footer p a {
 footer p a:hover {
   color: #fff;
 }
+
+
+.sign-up-page_parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .1fr 1fr;
+  grid-template-areas: "header"
+  "card";
+  height: 100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #8ec64e 0%, #41aba0 100%) repeat scroll 0 0;
+}
+
+.sign-up-page_header {
+  grid-area: header;
+}
+
+.sign-up-page_content {
+  grid-area: card;
+  margin-top: 15vh !important;
+  justify-self: center;
+  padding: 1.5rem !important;
+  width: 45vw !important;
+}
