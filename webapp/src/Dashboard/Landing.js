@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import { Header } from 'semantic-ui-react';
 
 class Landing extends Component {
   render() {
@@ -9,20 +10,9 @@ class Landing extends Component {
         <div class='navbar-default navbar-fixed-top' id='navigation'>
           <div class='container'>
             <div class='navbar-header'>
-              <button
-                type='button'
-                class='navbar-toggle collapsed'
-                data-toggle='collapse'
-                data-target='#navbar'
-              >
-                <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-              </button>
               <a class='navbar-brand' href='#'>
-                <img class='logo-1' src='images/logo.png' alt='LOGO' />
-                <img class='logo-2' src='images/logo-2.png' alt='LOGO' />
+                <Header as='h2'>Zeemz</Header>
+                {/* <img class='logo-2' src='images/logo-2.png' alt='LOGO' /> */}
               </a>
             </div>
 
@@ -50,10 +40,15 @@ class Landing extends Component {
             <div class='row'>
               <div class='col-md-6'>
                 <div class='block'>
-                  <h1 class='wow fadeInDown'>A passionate web company</h1>
+                  <h1 class='wow fadeInDown'>
+                    Zeemz: Pandemic Patch needs you!
+                  </h1>
                   <p class='wow fadeInDown' data-wow-delay='0.3s'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    Zeemz is participating in the fight against Coronavirus.
+                    We're working with talented people from around the world to
+                    develop Pandemic Patch, an augmented reality, blockchain
+                    game that doubles as a diagnostic tool to reduce hospital
+                    congestion.
                   </p>
                   <div
                     class='wow fadeInDown'
@@ -68,39 +63,11 @@ class Landing extends Component {
               </div>
               <div class='col-md-6 wow zoomIn'>
                 <div class='block'>
-                  <div class='counter text-center'>
-                    <ul id='countdown_dashboard'>
-                      <li>
-                        <div class='dash days_dash'>
-                          <div class='digit'>0</div>
-                          <div class='digit'>0</div>
-                          <div class='digit'>0</div>
-                          <span class='dash_title'>Days</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class='dash hours_dash'>
-                          <div class='digit'>0</div>
-                          <div class='digit'>0</div>
-                          <span class='dash_title'>Hours</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class='dash minutes_dash'>
-                          <div class='digit'>0</div>
-                          <div class='digit'>0</div>
-                          <span class='dash_title'>Minutes</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class='dash seconds_dash'>
-                          <div class='digit'>0</div>
-                          <div class='digit'>0</div>
-                          <span class='dash_title'>Seconds</span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                  <img
+                    class='zeemz-logo'
+                    src='https://lh6.googleusercontent.com/IPnRH-eCxIe5pl-25QaVvOa_biYULUHHGc42n5hLymw4mMnq_MMx2TZmS96b8tNjKCxx0MMQ=w16383'
+                    alt='LOGO'
+                  />
                 </div>
               </div>
             </div>

@@ -11,6 +11,7 @@ import {
   Icon,
 } from 'semantic-ui-react';
 import { connect } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
 
 class SignUp extends Component {
   state = {
@@ -195,7 +196,9 @@ class SignUp extends Component {
                 header="Awesome! Now you're good to go."
                 content="You'll be redirected in a few seconds."
               />
-              <Button type='submit'>Submit</Button>
+              <Link to='/'>
+                <Button type='submit'>Submit</Button>
+              </Link>
             </Form>
           </Card.Content>
         </Card>
@@ -207,4 +210,4 @@ const mapStateToProps = state => ({
   user: state.currentUser,
 });
 
-export default connect(mapStateToProps)(SignUp);
+export default withRouter(connect(mapStateToProps)(SignUp));
