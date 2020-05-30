@@ -55,7 +55,7 @@ class Landing extends Component {
                     data-wow-delay='0.3s'
                     onClick={() => this.props.history.push('/signUp')}
                   >
-                    <button class='btn btn-default btn-home' role='button'>
+                    <button class='btn btn-default btn-home'>
                       Get Started
                     </button>
                   </div>
