@@ -1,3 +1,12 @@
+# ZEEMZ: Pandemic Patch
+## An Augmented Reality, Blockchain Game that Doubles as a Diagnostic Tool to Fight CoVID-19 and Reduce Hospital Congestion
+
+In answer to their call (see below), Jenn and Moe, the co-founders of [Zeemz: The Versipisces Secret](https://www.zeemz.xyz) decided to turn the reward system behind Zeemz Multifaucet Adventures into an open source project named [Pandemic Patch](https://www.zeemz.xyz/pandemic-patch). When we reached out to [AskCo19.com](https://www.askco19.com) and the [COVIDathon community on Devpost](https://covidathon.devpost.com) we found interest and excitement for the system's potential. 
+
+Our goal is to help prevent hospital congestion through playing Pandemic Patch. In the patient portal, the blockchain faucet (reward system) will drip (release microrewards) for asking questions or completing tasks and quests. In the doctor portal, the faucet will drip for answering questions, creating or completing tasks and quests. In both cases, the data obtained from Pandemic Patch will be sent to [AskCo19.com](https://www.askco19.com) for the purpose of contributing information directly to frontline doctors who need it to combat coronavirus.  
+
+The instructions below work for building the overall project. The Zeemz: Pandemic Patch edition is a WIP located here: [LINK COMING SOON]
+
 [![Contributors](https://img.shields.io/github/contributors/nthopinion/covidathon)](https://github.com/nthopinion/covidathon/graphs/contributors) <!--[![MIT License](https://img.shields.io/github/license/nthopinion/covidathon)](https://github.com/nthopinion/covidathon/blob/master/LICENSE)-->
 
 <p align="center">
