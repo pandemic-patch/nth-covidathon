@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Header } from 'semantic-ui-react';
+import { Header, Icon } from 'semantic-ui-react';
 
 class Landing extends Component {
   render() {
@@ -11,7 +11,18 @@ class Landing extends Component {
           <div class='container'>
             <div class='navbar-header'>
               <a class='navbar-brand' href='#'>
-                <Header as='h2'>Zeemz</Header>
+                <Icon
+                  style={{ verticalAlign: 'middle' }}
+                  name='hospital outline'
+                  size='large'
+                ></Icon>
+                &nbsp;&nbsp;&nbsp;
+                <Header
+                  style={{ display: 'inline', verticalAlign: 'middle' }}
+                  as='h2'
+                >
+                  Zeemz
+                </Header>
                 {/* <img class='logo-2' src='images/logo-2.png' alt='LOGO' /> */}
               </a>
             </div>
@@ -65,7 +76,7 @@ class Landing extends Component {
                 <div class='block'>
                   <img
                     class='zeemz-logo'
-                    src='https://lh6.googleusercontent.com/IPnRH-eCxIe5pl-25QaVvOa_biYULUHHGc42n5hLymw4mMnq_MMx2TZmS96b8tNjKCxx0MMQ=w16383'
+                    src='https://zeemz-imgs.web.app/imgs/zeemz.png'
                     alt='LOGO'
                   />
                 </div>
@@ -100,8 +111,8 @@ class Landing extends Component {
                 data-wow-delay='0.3s'
               >
                 <img
-                  src='https://lh5.googleusercontent.com/yXDwcAZPnV8Sb0oXo_7Ek7-_KY-i9kcXvqfzHOjcjd9fI4WWvfHMpV9y1PhhUmwfQTqCTn6H=w16383'
-                  alt=''
+                  src='https://zeemz-imgs.web.app/imgs/scroll%20banner.jpg'
+                  alt='scroll'
                   height='100%'
                   width='100%'
                 />

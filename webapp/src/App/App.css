@@ -948,3 +948,66 @@ footer p a:hover {
 div.block h2 {
   color: black !important;
 }
+
+#sf4066a8fad3bebf303527561a82ffdb413f55c077a21faf59
+  .quickFormHorizontal
+  [name='SIGNUP_SUBMIT_BUTTON'] {
+  white-space: normal !important;
+}
+#sf4066a8fad3bebf303527561a82ffdb413f55c077a21faf59 #customForm * {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+/*** RESPONSIVE START */
+@media only screen and (max-width: 200px) {
+  #sf4066a8fad3bebf303527561a82ffdb413f55c077a21faf59 #SIGNUP_BODY {
+    max-idth: 200px !important;
+    margin: 0px auto !important;
+  }
+  #sf4066a8fad3bebf303527561a82ffdb413f55c077a21faf59 #SIGNUP_PAGE {
+    padding: 0px !important;
+  }
+}
+/*Major Mobiles*/
+@media screen and (min-width: 320px) and (max-width: 580px) and (orientation: portrait) {
+  #sf4066a8fad3bebf303527561a82ffdb413f55c077a21faf59 [name='SIGNUP_BODY'] {
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+}
+/* iPads*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #sf4066a8fad3bebf303527561a82ffdb413f55c077a21faf59 [name='SIGNUP_BODY'] {
+    max-width: 760px !important;
+    margin: 0px auto !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #sf4066a8fad3bebf303527561a82ffdb413f55c077a21faf59 [name='SIGNUP_BODY'] {
+    width: 1016px !important;
+    max-width: 1016px !important;
+    margin: 0px auto !important;
+  }
+}
+@media screen and (min-width: 475px) and (max-width: 980px) and (orientation: landscape) {
+  #sf4066a8fad3bebf303527561a82ffdb413f55c077a21faf59 #SIGNUP_PAGE {
+    max-width: 100% !important;
+    padding: 0px !important;
+  }
+}
+/*** RESPONSIVE END */
+.quick_form_12_css form {
+  padding-top: 10px;
+}
+.quick_form_12_css [changeitem='SIGNUP_FORM_FIELD'] {
+  width: 70% !important;
+  border-radius: 20px 0 0 20px !important;
+}
+.quick_form_12_css input[type='button'],
+.quick_form_12_css button,
+.quick_form_12_css [name='SIGNUP_SUBMIT_BUTTON'] {
+  border-radius: 0 20px 20px 0 !important;
+}
