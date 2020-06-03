@@ -1,3 +1,8 @@
+# Zeemz: Pandemic Patch Integration (WIP)
+
+The data collected from the Physician and Patient players, while at the AskCo19 Island Hospital (AI Hospital), will feed submitted data directly from player devices to the COVID-19 central repository (a.k.a. the Sovereign Sea) used by [AskCo19.com](https://www.askco19.com). Physicians will be able to control their AI through the Quest Maker inside the Physician portal.  
+
+
 # Covidathon x AskCo19.com
 This project is a part of the [Data Science Channel](https://join.slack.com/share/I011SB46KFS/I2lwDnXfX8UPwRRnv2ASM2sW/enQtMTA2MDM3ODIyMzUzNi03ZDlkZDBiZTg2MzdkMGUwN2Y3NGQxOTAzMGNhMDdiYTFlY2YxMDFjOTgzZTQ5ZjNmNDY4M2UzZDdlMWRkYTE3) at [Covidathon](http://bit.ly/hackingcovid19-slackinvite).  Other Covidathon projects can be found at the [main GitHub repo](https://github.com/nthopinion/covidathon).
 
@@ -8,7 +13,7 @@ The purpose of this project is to collect, validate, and process COVID-19 data i
 * Inferential Statistics
 * Machine Learning
 * Data Visualization
-* Predictive Modeling
+* Predictive Modeling https://www.microprediction.org/ Can we utilize this tool?
 * Linear Regression
 * Clustering (aka Unsupervised Learning)
 * Pattern Recognition 
