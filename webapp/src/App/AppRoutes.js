@@ -1,21 +1,35 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 import Dashboard from '../Dashboard/Dashboard';
 import Preview from '../Preview';
+import Landing from '../Dashboard/Landing';
+import SignUp from '../Patient/Tutorial/SignUp';
 // import Test from './Test';
 
 class AppRoutes extends Component {
   render() {
     return (
       <React.Fragment>
-        <Switch>
-          <Route exact path='/' component={Dashboard} />
-          <Route path='/preview' component={Preview} />
-          {/* <Route path='/test' component={Test} /> */}
-        </Switch>
+        {this.props.user.signedIn ? (
+          <Switch>
+            <Route exact path='/' component={Dashboard} />
+            <Route path='/preview' component={Preview} />
+            {/* <Route path='/test' component={Test} /> */}
+          </Switch>
+        ) : (
+          <Switch>
+            <Route exact path='/' component={Landing} />
+            <Route path='/signUp' component={SignUp} />
+          </Switch>
+        )}
       </React.Fragment>
     );
   }
 }
 
-export default withRouter(AppRoutes);
+const mapStateToProps = state => ({
+  user: state.currentUser,
+});
+
+export default withRouter(connect(mapStateToProps)(AppRoutes));
