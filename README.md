@@ -5,7 +5,7 @@ In answer to their call (see below), Jenn and Moe, the co-founders of [Zeemz: Th
 
 Our goal is to help prevent hospital congestion through playing Pandemic Patch. In the patient portal, the blockchain faucet (reward system) will drip (release microrewards) for asking questions or completing tasks and quests. In the doctor portal, the faucet will drip for answering questions, creating or completing tasks and quests. In both cases, the data obtained from Pandemic Patch will be sent to [AskCo19.com](https://www.askco19.com) for the purpose of contributing information directly to frontline doctors who need it to combat coronavirus.  
 
-The instructions below work for building the overall project. The Zeemz: Pandemic Patch edition is a WIP located here: [LINK COMING SOON]
+The instructions below work for building the overall project. The Zeemz: Pandemic Patch edition is a WIP located here [Patient side - WIP](https://github.com/pandemic-patch/nth-covidathon/tree/master/webapp/src).
 
 [![Contributors](https://img.shields.io/github/contributors/nthopinion/covidathon)](https://github.com/nthopinion/covidathon/graphs/contributors) <!--[![MIT License](https://img.shields.io/github/license/nthopinion/covidathon)](https://github.com/nthopinion/covidathon/blob/master/LICENSE)-->
 
