@@ -1,11 +1,25 @@
 # ZEEMZ: Pandemic Patch
 ## An Augmented Reality, Blockchain Game that Doubles as a Diagnostic Tool to Fight CoVID-19 and Reduce Hospital Congestion
 
-In answer to their call (see below), Jenn and Moe, the co-founders of [Zeemz: The Versipisces Secret](https://www.zeemz.xyz) decided to turn the reward system behind Zeemz Multifaucet Adventures into an open source project named [Pandemic Patch](https://www.zeemz.xyz/pandemic-patch). When we reached out to [AskCo19.com](https://www.askco19.com) and the [COVIDathon community on Devpost](https://covidathon.devpost.com) we found interest and excitement for the system's potential. 
-
-Our goal is to help prevent hospital congestion through playing Pandemic Patch. In the patient portal, the blockchain faucet (reward system) will drip (release microrewards) for asking questions or completing tasks and quests. In the doctor portal, the faucet will drip for answering questions, creating or completing tasks and quests. In both cases, the data obtained from Pandemic Patch will be sent to [AskCo19.com](https://www.askco19.com) for the purpose of contributing information directly to frontline doctors who need it to combat coronavirus.  
+In answer to their call (see below), Jenn and Moe, the co-founders of [Zeemz: The Versipisces Secret](https://www.zeemz.xyz) decided to turn the reward system behind Zeemz Multifaucet Adventures into an open source project named [Pandemic Patch](https://www.zeemz.xyz/pandemic-patch). When we reached out to [AskCo19.com](https://www.askco19.com) and the [COVIDathon community on Devpost](https://covidathon.devpost.com) we found interest and excitement for the system's potential. In 2 months, Zeemz went from a well-loved pet project (Zeemz: The Versipisces Secret) to an international open source project (Zeemz: Pandemic Patch). Our goal is to help prevent hospital congestion through playing Pandemic Patch. In the patient portal, the blockchain faucet (reward system) will drip (release microrewards) for asking questions or completing tasks and quests. In the doctor portal, the faucet will drip for answering questions, creating or completing tasks and quests. In both cases, the data obtained from Pandemic Patch will be sent to [AskCo19.com](https://www.askco19.com) for the purpose of contributing information directly to frontline doctors who need it to combat coronavirus.  
 
 The instructions below work for building the overall project. The Zeemz: Pandemic Patch edition is a WIP located here [Patient side - WIP](https://github.com/pandemic-patch/nth-covidathon/tree/master/webapp/src).
+
+![Zeemz: Pandemic Patch "Registration Thanks" Page](https://zeemz-imgs.web.app/imgs/pandemic-registration.png)
+
+The AskCo19 Island Hospital will be accessed by pressing/clicking the Heart icon in the center of the map. Inside the AI Hospital, verified physicians will be able to interact with their patients using our telehealth system, [IRIS-med](https://github.com/pandemic-patch/IRIS-COVID). Both, patients and physicians can earn cryptocurrency for making or taking CoVID-19 related quests. While we're designing and training IRIS-med, we're also conducting a literature review of our template scenario: ["To Wear/Not Wear a Mask While I Walk the Dog."](https://github.com/pandemic-patch/nth-covidathon/blob/master/Chart-9684751.pdf).
+
+The Vault icon (located next to the House) will open the financial quests. We've decided to integrate with AAVE to run a testnet version of their protocol to teach Zeemz: Pandemic Patch players about Decentralized and Traditional Financing. Though we're creating a testnet experience, mainnet tokens (ZMZLR, ZMZB, user tokens) are rewarded for quest completions. 
+
+![Aave testnet](https://zeemz-imgs.web.app/imgs/Aave_Deposit_tranasction.png)
+
+We experienced a difficulties with running the Kovan testnet, but were able to get it working on the Ropstein testnet.
+
+![Aave testnet success](https://zeemz-imgs.web.app/imgs/Aave-deposit-transac-confirm.png)
+
+The dog walking scenario is currently limited to a trip to the park. In the future, we'll add trips to the bank, pharmacy, and grocery stores. 
+<br />
+<br />
 
 [![Contributors](https://img.shields.io/github/contributors/nthopinion/covidathon)](https://github.com/nthopinion/covidathon/graphs/contributors) <!--[![MIT License](https://img.shields.io/github/license/nthopinion/covidathon)](https://github.com/nthopinion/covidathon/blob/master/LICENSE)-->
 
