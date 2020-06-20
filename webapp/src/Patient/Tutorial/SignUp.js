@@ -196,7 +196,7 @@ class SignUp extends Component {
                 header="Awesome! Now you're good to go."
                 content="You'll be redirected in a few seconds."
               />
-              <Link to='/'>
+              <Link to='/register'>
                 <Button type='submit'>Submit</Button>
               </Link>
             </Form>

@@ -26,6 +26,7 @@
   },
   "scripts": {
     "start": "react-scripts start && node ./server/index.js",
+    "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --maxWorkers=2 --setupFiles ./.setupTests.js",
     "eject": "react-scripts eject"

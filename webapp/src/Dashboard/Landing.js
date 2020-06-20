@@ -3,49 +3,47 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { Header, Icon } from 'semantic-ui-react';
 
+const navStyle = {
+    color: 'black',
+    padding: '20px'
+}
+
 class Landing extends Component {
   render() {
     return (
       <div>
-        <div class='navbar-default navbar-fixed-top' id='navigation'>
+        <div class='navbar-default navbar-fixed-top ' id='navigation'>
           <div class='container'>
             <div class='navbar-header'>
               <a class='navbar-brand' href='#'>
-                <Icon
-                  style={{ verticalAlign: 'middle' }}
-                  name='hospital outline'
-                  size='large'
-                ></Icon>
+              <Icon style={{ verticalAlign: 'middle' }}  name='hospital outline' size='large'></Icon>
                 &nbsp;&nbsp;&nbsp;
-                <Header
-                  style={{ display: 'inline', verticalAlign: 'middle' }}
-                  as='h2'
-                >
+                <Header style={{ display: 'inline', verticalAlign: 'middle' }} as='h2'>
                   Zeemz
                 </Header>
                 {/* <img class='logo-2' src='images/logo-2.png' alt='LOGO' /> */}
               </a>
             </div>
-
-            <nav class='collapse navbar-collapse' id='navbar'>
-              <ul class='nav navbar-nav navbar-right' id='top-nav'>
-                <li class='current'>
-                  <a href='#body'>Home</a>
+            
+            <nav class='navbar navbar-light navbar-expand-sm'  id='navbar'>
+              <ul class='navbar-nav mr-auto'  id='top-nav'>
+                <li class='nav-item' >
+                  <a href='#body' style={{color: 'black', padding: '20px'}}>Home</a>
                 </li>
-                <li>
-                  <a href='#about'>About us</a>
+                <li class='nav-item'>
+                  <a href='#about' style={navStyle}>About us</a>
                 </li>
-                <li>
-                  <a href='#service'>Services</a>
+                <li class='nav-item'>
+                  <a href='#service' style={navStyle}>Service</a>
                 </li>
-                <li>
-                  <a href='#contact'>Contact</a>
+                <li class='nav-item' >
+                  <a href='#contact' style={{color: "black"}}>Contact</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
-
+      
         <section id='hero-area'>
           <div class='container'>
             <div class='row'>
@@ -61,24 +59,14 @@ class Landing extends Component {
                     game that doubles as a diagnostic tool to reduce hospital
                     congestion.
                   </p>
-                  <div
-                    class='wow fadeInDown'
-                    data-wow-delay='0.3s'
-                    onClick={() => this.props.history.push('/signUp')}
-                  >
-                    <button class='btn btn-default btn-home'>
-                      Get Started
-                    </button>
+                  <div class='wow fadeInDown' data-wow-delay='0.3s' onClick={() => this.props.history.push('/signUp')}>
+                    <button class='btn btn-default btn-home'> Get Started </button>
                   </div>
                 </div>
               </div>
               <div class='col-md-6 wow zoomIn'>
                 <div class='block'>
-                  <img
-                    class='zeemz-logo'
-                    src='https://zeemz-imgs.web.app/imgs/zeemz.png'
-                    alt='LOGO'
-                  />
+                  <img class='zeemz-logo'  src='https://zeemz-imgs.web.app/imgs/zeemz.png'  alt='LOGO'/>
                 </div>
               </div>
             </div>
@@ -132,7 +120,7 @@ class Landing extends Component {
                 <div class='service'>
                   <div class='icon-box'>
                     <img
-                      src='https://lh4.googleusercontent.com/NYpUxJNplOuoinI3M5mnqmzUHENGtAHvQY7WhAwF8BRhU-swOjNP4Mp2cxX5LVwLjAqA-RApu3-9wo45Jf75MhpomAXZO_XpPMycI4zQ9GvFQDYA3d0=w1280'
+                      src='https://zeemz-imgs.web.app/imgs/currency.jpg'
                       alt='fiat'
                       width='100%'
                       height='100%'
@@ -155,7 +143,7 @@ class Landing extends Component {
                 <div class='service'>
                   <div class='icon-box'>
                     <img
-                      src='https://lh6.googleusercontent.com/auvAl5Gefo9jXcnBCGKETEgmkodBF_APNWivFbu8pjxaZ_2MTSfhWdLF6taDepmIQYDhDfCl3Ysz9EkeCzcprH-nFtEcLYfZP7ol1brvA61XhmjnKg=w1280'
+                      src='https://zeemz-imgs.web.app/imgs/crypto.jpg'
                       alt='fiat'
                       width='100%'
                       height='100%'
@@ -178,7 +166,7 @@ class Landing extends Component {
                 <div class='service'>
                   <div class='icon-box'>
                     <img
-                      src='https://lh5.googleusercontent.com/h7DS7wwnWoYT8xN5pwc8BF8YdB5gjvDK_czLxRN539tAAqrI1imSeq48FMJ94F4xiAjFKMQllnV-MtkNAVswtzJxRNuXa5zQ_Uq95tMgaFL6011_BQ=w1280'
+                      src='https://zeemz-imgs.web.app/imgs/network.png'
                       alt='fiat'
                       width='100%'
                       height='100%'
@@ -201,7 +189,7 @@ class Landing extends Component {
                 <div class='service'>
                   <div class='icon-box'>
                     <img
-                      src='https://lh4.googleusercontent.com/Pl7wXHxtgQn6GT0lvQYDJkG-09nFysK7yINW2wWbfzv95lZJlWeVV28d22CAOdR6o6h1g_cxjd3b7y6YyTJ2ps1j0kXsET1PYZaZqqT22-i3QEf26Ew=w1280'
+                      src='https://zeemz-imgs.web.app/imgs/social.jpg'
                       alt='fiat'
                       width='100%'
                       height='100%'
@@ -243,7 +231,7 @@ class Landing extends Component {
                       class='form-control'
                       placeholder='Enter Your Email Address'
                     />
-                    <button class='btn btn-default btn-submit' type='submit'>
+                    <button class='btn btn-default btn-submit' type='submit' onClick={() => this.props.history.push('/notify')}>
                       Get Notified
                     </button>
                   </div>
