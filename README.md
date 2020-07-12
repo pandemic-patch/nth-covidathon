@@ -52,6 +52,7 @@ The dog walking scenario is currently limited to a trip to the park. In the futu
 
 <!--Our application is a web app. It has a public facing interface, and a doctor/healthcare worker facing interface. Users can search through a database of previously asked questions about COVID-19 (or add their question to the database if it hasn't already been asked), and obtain answers from medical professionals around the globe.
 -->
+</p>
 
 ## About The Project
 
@@ -59,7 +60,7 @@ SARS-COV-2 is spreading around the globe at a frighteningly rapid pace. This war
 <br>
 
 <b>Who are we?</b><br>
-Three technology companies — <b>SingularityNET, Ocean Protocol and Nth Opinion </b> — have joined efforts to utilize the latest technologies to outpace the spread of the virus. </p>
+Three technology companies — <b>SingularityNET, Ocean Protocol and Nth Opinion </b> — have joined efforts to utilize the latest technologies to outpace the spread of the virus. 
 
 <b>What are we building together?</b><br>
 The grassroots open-source team behind AskCo19.com is excited to partner with SingularityNET to merge decentralized protocols, communication technologies, artificial intelligence, and machine learning.
