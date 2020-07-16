@@ -1,49 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Header, Icon } from 'semantic-ui-react';
 
-const navStyle = {
-    color: 'black',
-    padding: '20px'
-}
+import Navbar from '../Layouts/Navbar';
 
 class Landing extends Component {
   render() {
     return (
       <div>
-        <div class='navbar-default navbar-fixed-top ' id='navigation'>
-          <div class='container'>
-            <div class='navbar-header'>
-              <a class='navbar-brand' href='#'>
-              <Icon style={{ verticalAlign: 'middle' }}  name='hospital outline' size='large'></Icon>
-                &nbsp;&nbsp;&nbsp;
-                <Header style={{ display: 'inline', verticalAlign: 'middle' }} as='h2'>
-                  Zeemz
-                </Header>
-                {/* <img class='logo-2' src='images/logo-2.png' alt='LOGO' /> */}
-              </a>
-            </div>
-            
-            <nav class='navbar navbar-light navbar-expand-sm'  id='navbar'>
-              <ul class='navbar-nav mr-auto'  id='top-nav'>
-                <li class='nav-item' >
-                  <a href='#body' style={{color: 'black', padding: '20px'}}>Home</a>
-                </li>
-                <li class='nav-item'>
-                  <a href='#about' style={navStyle}>About us</a>
-                </li>
-                <li class='nav-item'>
-                  <a href='#service' style={navStyle}>Service</a>
-                </li>
-                <li class='nav-item' >
-                  <a href='#contact' style={{color: "black"}}>Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      
+        <Navbar />
         <section id='hero-area'>
           <div class='container'>
             <div class='row'>
