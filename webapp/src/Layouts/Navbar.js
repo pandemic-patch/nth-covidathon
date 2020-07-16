@@ -1,19 +1,24 @@
 import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
 
+import SideBar from './SideBar';
+
 const Navbar = () => {
+  // this array is created just to be simpler way to modify nav options/link in sidebar//
+  const navOptions = ['Home', 'About Us', 'Service', 'Contact']
+
   return(
     <div className='navbar'>
       <AppBar position='fixed'>
         <Toolbar>
           <IconButton edge='start' aria-label='brand-logo'>
-            <i class='far fa-building'></i>
+            <i className='far fa-building'></i>
           </IconButton>
           <Typography variant='h5'>
             Zeems
           </Typography>
           <div className='nav-link'>
-            <a href='#body'>Home</a>
+            <a href='#home'>Home</a>
           </div>
           <div className='nav-link'>
             <a href='#about'>About Us</a>
@@ -24,6 +29,7 @@ const Navbar = () => {
           <div className='nav-link'>
             <a href='#contact'>Contact</a>
           </div>
+          <SideBar navOptions={navOptions}/>
         </Toolbar>    
       </AppBar>
     </div>
