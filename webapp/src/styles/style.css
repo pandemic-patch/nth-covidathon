@@ -30,4 +30,15 @@
   width: 50vw;
 }
 
+@media screen and (min-width: 650px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .nav-link {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

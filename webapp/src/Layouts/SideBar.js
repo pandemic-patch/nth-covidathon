@@ -32,7 +32,7 @@ const SideBar = ({navOptions}) => {
     )
 
     return(
-        <React.Fragment key={anchor}>
+        <div className='sidebar' key={anchor}>
             {/* button to trigger drawer */}
             <Button onClick={toggleDrawer(anchor, true)}>
                 <i className='fas fa-bars' />
@@ -46,7 +46,7 @@ const SideBar = ({navOptions}) => {
             >
                 {drawer(anchor)}
             </Drawer>
-        </React.Fragment>
+        </div>
     )
 }
 
