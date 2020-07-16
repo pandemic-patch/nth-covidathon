@@ -1,13 +1,15 @@
 import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
 
+import SideBar from './SideBar';
+
 const Navbar = () => {
   return(
     <div className='navbar'>
       <AppBar position='fixed'>
         <Toolbar>
           <IconButton edge='start' aria-label='brand-logo'>
-            <i class='far fa-building'></i>
+            <i className='far fa-building'></i>
           </IconButton>
           <Typography variant='h5'>
             Zeems
@@ -24,6 +26,7 @@ const Navbar = () => {
           <div className='nav-link'>
             <a href='#contact'>Contact</a>
           </div>
+          <SideBar/>
         </Toolbar>    
       </AppBar>
     </div>

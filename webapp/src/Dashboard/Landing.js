@@ -10,42 +10,42 @@ class Landing extends Component {
       <div>
         <Navbar />
         <section id='hero-area'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-6'>
-                <div class='block'>
-                  <h1 class='wow fadeInDown'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-6'>
+                <div className='block'>
+                  <h1 className='wow fadeInDown'>
                     Zeemz: Pandemic Patch needs you!
                   </h1>
-                  <p class='wow fadeInDown' data-wow-delay='0.3s'>
+                  <p className='wow fadeInDown' data-wow-delay='0.3s'>
                     Zeemz is participating in the fight against Coronavirus.
                     We're working with talented people from around the world to
                     develop Pandemic Patch, an augmented reality, blockchain
                     game that doubles as a diagnostic tool to reduce hospital
                     congestion.
                   </p>
-                  <div class='wow fadeInDown' data-wow-delay='0.3s' onClick={() => this.props.history.push('/signUp')}>
-                    <button class='btn btn-default btn-home'> Get Started </button>
+                  <div className='wow fadeInDown' data-wow-delay='0.3s' onClick={() => this.props.history.push('/signUp')}>
+                    <button className='btn btn-default btn-home'> Get Started </button>
                   </div>
                 </div>
               </div>
-              <div class='col-md-6 wow zoomIn'>
-                <div class='block'>
-                  <img class='zeemz-logo'  src='https://zeemz-imgs.web.app/imgs/zeemz.png'  alt='LOGO'/>
+              <div className='col-md-6 wow zoomIn'>
+                <div className='block'>
+                  <img className='zeemz-logo'  src='https://zeemz-imgs.web.app/imgs/zeemz.png'  alt='LOGO'/>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id='about' class='section'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-7 col-sm-12 wow fadeInLeft'>
-                <div class='sub-heading'>
+        <section id='about' className='section'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-7 col-sm-12 wow fadeInLeft'>
+                <div className='sub-heading'>
                   <h3>Join the Zeemz Army & fight Coronavirus.</h3>
                 </div>
-                <div class='block'>
+                <div className='block'>
                   <p>
                     Personal privacy and data ownership are at the heart of our
                     design. Pandemic Patch will not send your data without
@@ -60,7 +60,7 @@ class Landing extends Component {
                 </div>
               </div>
               <div
-                class='col-md-5 col-sm-12 wow fadeInLeft'
+                className='col-md-5 col-sm-12 wow fadeInLeft'
                 data-wow-delay='0.3s'
               >
                 <img
@@ -74,16 +74,16 @@ class Landing extends Component {
           </div>
         </section>
 
-        <section id='service' class='section'>
-          <div class='container'>
-            <div class='row'>
-              <div class='heading wow fadeInUp'>
+        <section id='service' className='section'>
+          <div className='container'>
+            <div className='row'>
+              <div className='heading wow fadeInUp'>
                 <h2>Donations</h2>
                 <p></p>
               </div>
-              <div class='col-sm-6 col-md-3 wow fadeInLeft'>
-                <div class='service'>
-                  <div class='icon-box'>
+              <div className='col-sm-6 col-md-3 wow fadeInLeft'>
+                <div className='service'>
+                  <div className='icon-box'>
                     <img
                       src='https://zeemz-imgs.web.app/imgs/currency.jpg'
                       alt='fiat'
@@ -91,7 +91,7 @@ class Landing extends Component {
                       height='100%'
                     />
                   </div>
-                  <div class='caption'>
+                  <div className='caption'>
                     <a href='https://www.zeemz.xyz/donate-fiat'>
                       <u>
                         <h3>Fiat</h3>
@@ -102,11 +102,11 @@ class Landing extends Component {
                 </div>
               </div>
               <div
-                class='col-sm-6 col-md-3 wow fadeInLeft'
+                className='col-sm-6 col-md-3 wow fadeInLeft'
                 data-wow-delay='0.3s'
               >
-                <div class='service'>
-                  <div class='icon-box'>
+                <div className='service'>
+                  <div className='icon-box'>
                     <img
                       src='https://zeemz-imgs.web.app/imgs/crypto.jpg'
                       alt='fiat'
@@ -114,7 +114,7 @@ class Landing extends Component {
                       height='100%'
                     />
                   </div>
-                  <div class='caption'>
+                  <div className='caption'>
                     <a href='https://www.zeemz.xyz/donate-crypto'>
                       <u>
                         <h3>Crypto</h3>
@@ -125,11 +125,11 @@ class Landing extends Component {
                 </div>
               </div>
               <div
-                class='col-sm-6 col-md-3 wow fadeInLeft'
+                className='col-sm-6 col-md-3 wow fadeInLeft'
                 data-wow-delay='0.6s'
               >
-                <div class='service'>
-                  <div class='icon-box'>
+                <div className='service'>
+                  <div className='icon-box'>
                     <img
                       src='https://zeemz-imgs.web.app/imgs/network.png'
                       alt='fiat'
@@ -137,7 +137,7 @@ class Landing extends Component {
                       height='100%'
                     />
                   </div>
-                  <div class='caption'>
+                  <div className='caption'>
                     <a href='https://www.zeemz.xyz/donate-skills'>
                       <u>
                         <h3>Desgin / Coding</h3>
@@ -148,11 +148,11 @@ class Landing extends Component {
                 </div>
               </div>
               <div
-                class='col-sm-6 col-md-3 wow fadeInLeft'
+                className='col-sm-6 col-md-3 wow fadeInLeft'
                 data-wow-delay='0.9s'
               >
-                <div class='service'>
-                  <div class='icon-box'>
+                <div className='service'>
+                  <div className='icon-box'>
                     <img
                       src='https://zeemz-imgs.web.app/imgs/social.jpg'
                       alt='fiat'
@@ -160,7 +160,7 @@ class Landing extends Component {
                       height='100%'
                     />
                   </div>
-                  <div class='caption'>
+                  <div className='caption'>
                     <a href='https://www.zeemz.xyz/donate-social-media'>
                       <u>
                         <h3>Social Media</h3>
@@ -174,11 +174,11 @@ class Landing extends Component {
           </div>
         </section>
 
-        <section id='call-to-action' class='section'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-12 wow text-center'>
-                <div class='block'>
+        <section id='call-to-action' className='section'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-12 wow text-center'>
+                <div className='block'>
                   <h2>
                     Sign up for alpha testing! and be one of the first to play,
                     create, and collect Zeemz
@@ -190,13 +190,13 @@ class Landing extends Component {
                     development team emails that will keep you up-to-date on the
                     latest additions!
                   </p>
-                  <div class='form-group'>
+                  <div className='form-group'>
                     <input
                       type='text'
-                      class='form-control'
+                      className='form-control'
                       placeholder='Enter Your Email Address'
                     />
-                    <button class='btn btn-default btn-submit' type='submit' onClick={() => this.props.history.push('/notify')}>
+                    <button className='btn btn-default btn-submit' type='submit' onClick={() => this.props.history.push('/notify')}>
                       Get Notified
                     </button>
                   </div>
@@ -206,15 +206,15 @@ class Landing extends Component {
           </div>
         </section>
         <hr />
-        <section id='contact' class='section'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-xs-12 col-sm-12 col-md-5 wow fadeInUp'>
-                <div class='block text-left'>
-                  <div class='sub-heading'>
+        <section id='contact' className='section'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-xs-12 col-sm-12 col-md-5 wow fadeInUp'>
+                <div className='block text-left'>
+                  <div className='sub-heading'>
                     <h4>Useful Links</h4>
                   </div>
-                  <address class='address'>
+                  <address className='address'>
                     <hr />
                     <p>
                       <b>
@@ -248,14 +248,14 @@ class Landing extends Component {
         </section>
 
         <section clas='wow fadeInUp'>
-          <div class='map-wrapper'></div>
+          <div className='map-wrapper'></div>
         </section>
 
         <footer>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-12'>
-                <div class='block'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-12'>
+                <div className='block'>
                   <p>
                     <b>Copyright © 2020 ZEEMZ v. 0.2.0-preAlpha</b>
                     <br />
