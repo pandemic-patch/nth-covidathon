@@ -14,5 +14,9 @@ RUN yarn install
 
 COPY . .
 
-CMD yarn run client
+RUN yarn run build
+
+RUN yarn global add serve
+
+CMD ["serve", "-s", "build"]
 
