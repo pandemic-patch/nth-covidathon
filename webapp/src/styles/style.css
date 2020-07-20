@@ -1,0 +1,44 @@
+.navbar {
+  padding: 0px !important;
+}
+
+.MuiAppBar-root {
+  background-color: white !important;
+  color: black !important;
+}
+
+.navbar button {
+  color: black;
+}
+
+.navbar h5 {
+  font-size: 18pt !important;
+  flex-grow: 1 !important;
+  font-style: bold !important;
+}
+
+.nav-link a {
+  color: black !important;
+  font-size: 12pt !important;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+.sidebar-drawer {
+  width: 50vw;
+}
+
+@media screen and (min-width: 650px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .nav-link {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
