@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { Route, Switch, withRouter } from 'react-router-dom';
+
+import LoginForm from '../auth/LoginForm';
 import Dashboard from '../Dashboard/Dashboard';
-import Preview from '../Preview';
 import Landing from '../Dashboard/Landing';
-import SignUp from '../Patient/Tutorial/SignUp';
 import Notify from '../Dashboard/Notify';
 import Register from '../Dashboard/Register';
+import SignUp from '../Patient/Tutorial/SignUp';
+import Preview from '../Preview';
+
 // import Test from './Test';
 
 class AppRoutes extends Component {
@@ -25,6 +28,7 @@ class AppRoutes extends Component {
             <Route path='/signUp' component={SignUp} />
             <Route path='/notify' component={Notify} />
             <Route exact path='/register' component={Register} />
+            <Route exact path = '/login' component={LoginForm} />
           </Switch>
         )}
       </React.Fragment>

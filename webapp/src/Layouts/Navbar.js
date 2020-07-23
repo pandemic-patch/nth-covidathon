@@ -29,6 +29,9 @@ const Navbar = () => {
           <div className='nav-link'>
             <a href='#contact'>Contact</a>
           </div>
+          <div className='nav-link'>
+            <a href='/login'>Login</a>
+          </div>
           <SideBar navOptions={navOptions}/>
         </Toolbar>    
       </AppBar>
