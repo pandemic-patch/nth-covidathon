@@ -1,31 +1,25 @@
-import { TextField } from '@material-ui/core';
-import { Formik } from 'formik';
+import { Card, CardContent, TextField, Typography } from '@material-ui/core';
 import React from 'react';
 
 const LoginForm = () => {
     return(
         <React.Fragment>
-            <Formik 
-                initialValues={{email: '', password: ''}}
-                onSubmit={data => { console.log(data) }}
-            >
-                {({values, handleChange, handleBlur, handleSubmit}) => (
-                <form onSubmit={handleSubmit}>
-                    <TextField 
-                        name='email'
-                        value={values.email} 
-                        onChange={handleChange} 
-                        onBlur={handleBlur}
-                    />
-                    <TextField 
-                        name='password'
-                        value={values.password} 
-                        onChange={handleChange} 
-                        onBlur={handleBlur}
-                    />
-                </form>
-                )}
-            </Formik>
+            <Card className='login-form-card'>
+                <CardContent>
+                    <Typography>Login</Typography>
+                    {/* actual form */}
+                    <div className='login-form'>
+                        <TextField 
+                            label='Email' 
+                            variant='outlined'
+                        />
+                        <TextField 
+                            label='password' 
+                            variant='outlined'
+                        />
+                    </div>
+                </CardContent>
+            </Card>
         </React.Fragment>
     )
 }
