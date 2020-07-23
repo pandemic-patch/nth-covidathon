@@ -40,5 +40,19 @@
     display: none;
   }
 }
+.login-form-card {
+  width: 45vw;
+  margin: auto;
+  margin-top: 15vh;
+  text-align: center;
+}
+.login-form-card p {
+  font-size: 18pt;
+  margin: 1%;
+}
+.login-form-card .MuiFormControl-root {
+  margin: 2%;
+  width: 25vw;
+}
 
 /*# sourceMappingURL=style.css.map */

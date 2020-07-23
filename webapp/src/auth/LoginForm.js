@@ -1,4 +1,4 @@
-import { Card, CardContent, TextField, Typography } from '@material-ui/core';
+import { Button, Card, CardContent, TextField, Typography } from '@material-ui/core';
 import React from 'react';
 
 const LoginForm = () => {
@@ -8,16 +8,23 @@ const LoginForm = () => {
                 <CardContent>
                     <Typography>Login</Typography>
                     {/* actual form */}
-                    <div className='login-form'>
+                    <div>
                         <TextField 
                             label='Email' 
                             variant='outlined'
                         />
+                    </div>
+                    <div>
                         <TextField 
-                            label='password' 
+                            label='Password' 
                             variant='outlined'
                         />
                     </div>
+                    <div>
+                        <Button variant='contained'>
+                        Login
+                        </Button>
+                    </div>     
                 </CardContent>
             </Card>
         </React.Fragment>
