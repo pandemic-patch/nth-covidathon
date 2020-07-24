@@ -1,6 +1,8 @@
 import { Button, Card, CardContent, TextField, Typography } from '@material-ui/core';
 import React, { useState } from 'react';
 
+import Header from '../layout/Header';
+
 const LoginForm = () => {
 
     const [formData, setFormData] = useState({
@@ -17,7 +19,8 @@ const LoginForm = () => {
     }
     console.log(formData)
     return(
-        <React.Fragment>
+        <div className='login-form-background'>
+            <Header />
             <Card className='login-form-card'>
                 <CardContent>
                     <Typography>Login</Typography>
@@ -47,9 +50,10 @@ const LoginForm = () => {
                         Login
                         </Button>
                     </div>     
+                    <Typography className='login-form-option'>Not a member ? <a href='/signup'>Sign up</a></Typography>
                 </CardContent>
-            </Card>
-        </React.Fragment>
+            </Card> 
+        </div>
     )
 }
 

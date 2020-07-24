@@ -1,4 +1,4 @@
-import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Button, IconButton, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
 
 import SideBar from './SideBar';
@@ -30,7 +30,11 @@ const Navbar = () => {
             <a href='#contact'>Contact</a>
           </div>
           <div className='nav-link'>
-            <a href='/login'>Login</a>
+            <a href='/login'>
+              <Button>
+                Login
+              </Button>
+            </a>
           </div>
           <SideBar navOptions={navOptions}/>
         </Toolbar>    
