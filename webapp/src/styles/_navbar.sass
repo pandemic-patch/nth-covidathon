@@ -20,10 +20,21 @@
 .nav-link a:hover 
     text-decoration: underline
 
+.nav-link button 
+    background: -webkit-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%)
+    background: -o-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%)
+    background: -ms-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%)
+    background: linear-gradient(135deg, #8ec64e 0%, #41aba0 100%)
+    opacity: 80% !important
+    a 
+        text-decoration: none !important
+
 
 // Styles For Sidebar - no dedicated file because it acts as part of navbar and to avoid unneccesssary modularity because there aren't many lines here //
 .sidebar-drawer
     width: 50vw
+
+// media queries//
 
 @media screen and ( min-width: 650px ) 
     .sidebar
@@ -35,4 +46,7 @@
     
 
 
-    
+// ------------------------------------------------------------------------------------------------------------------------/
+// This file contains styling for header too - as it shares a alot of them and have limited of itself///import css-variables from 
+.header-brand-logo
+    text-align: center

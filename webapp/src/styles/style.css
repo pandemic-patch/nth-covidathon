@@ -26,6 +26,17 @@
   text-decoration: underline;
 }
 
+.nav-link button {
+  background: -webkit-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%);
+  background: -o-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%);
+  background: -ms-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%);
+  background: linear-gradient(135deg, #8ec64e 0%, #41aba0 100%);
+  opacity: 80% !important;
+}
+.nav-link button a {
+  text-decoration: none !important;
+}
+
 .sidebar-drawer {
   width: 50vw;
 }
@@ -39,6 +50,46 @@
   .nav-link {
     display: none;
   }
+}
+.header-brand-logo {
+  text-align: center;
+}
+
+.login-form-background {
+  height: 100vh !important;
+  width: 100vw !important;
+  padding-top: 20vh;
+  background: -webkit-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%);
+  background: -o-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%);
+  background: -ms-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%);
+  background: linear-gradient(135deg, #8ec64e 0%, #41aba0 100%);
+}
+
+.login-form-card {
+  width: 45vw;
+  margin: auto;
+  text-align: center;
+}
+.login-form-card p {
+  font-size: 18pt;
+  margin: 1%;
+}
+.login-form-card .MuiFormControl-root {
+  margin: 2%;
+  width: 25vw;
+}
+.login-form-card button {
+  margin: 5%;
+  width: 20%;
+  height: 100%;
+  background: -webkit-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%);
+  background: -o-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%);
+  background: -ms-linear-gradient(-45deg, #8ec64e 0%, #41aba0 100%);
+  background: linear-gradient(135deg, #8ec64e 0%, #41aba0 100%);
+}
+
+.login-form-option {
+  font-size: 12pt !important;
 }
 
 /*# sourceMappingURL=style.css.map */

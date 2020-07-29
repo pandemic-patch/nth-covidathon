@@ -8,6 +8,7 @@
     "classnames": "^2.2.6",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "formik": "^2.1.5",
     "install": "^0.12.2",
     "lodash": "^4.17.19",
     "moment": "^2.22.2",
