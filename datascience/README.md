@@ -70,6 +70,7 @@ The grassroots open-source team behind AskCo19.com is excited to partner with Si
 
 |Name     |  Slack Handle   | 
 |---------|-----------------|
-|[Harini Perera](https://github.com/[harini-perera])| @Harini Perera        |
+|[Harini Perera](https://github.com/harini-perera)| @Harini Perera        |
+|[Monique Finley](https://github.com/finleyecp)| @finley |
 |[Full Name](https://github.com/[github handle]) |     @janeDoe    |
 
