@@ -7,6 +7,7 @@ The ZQM Editor is the "Quest Maker" listed above in the Doctor's Dash.
 
 The Quest Gallery holds all the images that the doctor has uploaded (or, has chosen to let IRIS-med pick). These images will show up in the matching game. The images for the matching game can be obtained from any/all of the following galleries: the IRIS-AI (public images), the physician's (public/private images), or the patient's (shared images). The physician can set up their version of the matching game to contain only a specific type of images (what would a physician want to test a patient for in a matching scenario?). Once the physician is content with their version, they can send it to the patients or sell access on the zMARKT (Zeemz Market). Likewise, if the physician is seeking data, they can offer their version to the public as a Zeemz Quest. 
  
+[ZPP-quest-module-editor-1](https://raw.githubusercontent.com/pandemic-patch/nth-covidathon/e7fe654b10042533a2ff5ea10c7632ff31783812/webapp/examples/ZPP-quest-module-editor.jpg)
 
 ## Physician View of PvP Matching Game
 The Physician View would be accessible in the "Visit a Patient" tab listed above in the Doctor's Dash. 
@@ -14,11 +15,16 @@ The Physician View would be accessible in the "Visit a Patient" tab listed above
 
 This type of game would allow a physician and a patient to interact in a game setting, both would be able to play a matching game, and do "battle" against each other. The data gathered could include the number of times players were right/wrong, time spent playing, image types that cause player identification problems (ex. patient can't see difference between red & green squares - colorblind), and help build connections in the memory. For the physician, in addition to learning about the patient's abilities, the physician would be able to play a game while working.
 
+[ZPP-physician-view-match-game-1](https://raw.githubusercontent.com/pandemic-patch/nth-covidathon/e7fe654b10042533a2ff5ea10c7632ff31783812/webapp/examples/zpp-pvp-match-game.jpg)
+
 ## Physician View of PvP Question & Answer Game
+As in the example above, the Physician View would be accessible in the "Visit a Patient" tab. The AI Hospital Game Room will contain games that encourage thinking, meditation, and self-care.
 
+![zpp-pvp-qna-game](https://raw.githubusercontent.com/pandemic-patch/nth-covidathon/e7fe654b10042533a2ff5ea10c7632ff31783812/webapp/examples/zpp-pvp-qna-game.jpg)
 
-INSERT Game Image and Info HERE
+Doctors can choose to interact with patients in a traditional telebedicine window, or they can enter the AI Hospital Game Room and interact with patients through games. Questions and Answers will have rates assigned in multiple ways. 1st the doctors can set the reward rates for the quests that they create. 2nd the patients can set the reward rates for the questions that they want answered. 3rd the IRIS-med system can assign rewards based on the novelty/frequency of the questions/answer pairs.
 
+[zpp-pvp-qna-game](https://raw.githubusercontent.com/pandemic-patch/nth-covidathon/e7fe654b10042533a2ff5ea10c7632ff31783812/webapp/examples/zpp-pvp-qna-game.jpg)
 
 
 ## Patient View of PvP Matching Game
@@ -27,10 +33,17 @@ The Patient View would be accessible in the "ZQM: Editor" when the "Preview" but
 
 This section needs to be accessible to the doctor inside ZQM: The Editor, so that they can preview and edit when making their version. It also needs to be accessible to the patient through the A.I. Hospital (public/private quests), A.I. Chat (Game Together integration), and the A.I. Pirate Ship (public quest board, aka Jobs Board). 
 
+[ZPP-pvp-match-game-patient-1](https://raw.githubusercontent.com/pandemic-patch/nth-covidathon/e7fe654b10042533a2ff5ea10c7632ff31783812/webapp/examples/zpp-pvp-match-game-patient.jpg)
+
 ## Patient View of PvP Question & Answer Game
+The Patient View of the Q&A Game contains many of the same features as the Matching Game. And, will be accessible from all the same locations. We want players to have redundant access from multiple locations to encourage game play. 
 
+![zpp-pvp-qna-game-patient](https://raw.githubusercontent.com/pandemic-patch/nth-covidathon/e7fe654b10042533a2ff5ea10c7632ff31783812/webapp/examples/zpp-pvp-qna-game-patient.jpg)
 
-INSERT Game Image and Info HERE
+The Questions and Answers will be connected to AskCo19.com's database to allow players access to a trusted source of realtime data on CoVID-19, created by frontline physicians from around the world. The AskCo19 database utilizes AI and ML to investigate, incorporate, and integrate multiple medical opinions regarding treatment options. 
+
+[ZPP-pvp-qna-game-patient](https://raw.githubusercontent.com/pandemic-patch/nth-covidathon/e7fe654b10042533a2ff5ea10c7632ff31783812/webapp/examples/zpp-pvp-qna-game-patient.jpg) 
+
 
 
 ## Q & A
