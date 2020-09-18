@@ -14,11 +14,24 @@ The Physician View would be accessible in the "Visit a Patient" tab listed above
 
 This type of game would allow a physician and a patient to interact in a game setting, both would be able to play a matching game, and do "battle" against each other. The data gathered could include the number of times players were right/wrong, time spent playing, image types that cause player identification problems (ex. patient can't see difference between red & green squares - colorblind), and help build connections in the memory. For the physician, in addition to learning about the patient's abilities, the physician would be able to play a game while working.
 
+## Physician View of PvP Question & Answer Game
+
+
+INSERT Game Image and Info HERE
+
+
+
 ## Patient View of PvP Matching Game
 The Patient View would be accessible in the "ZQM: Editor" when the "Preview" button is pressed. The Patient View is the only section that the player sees of the Zeemz Quest Module (pr #8).
 ![zpp-pvp-match-game-patient](https://user-images.githubusercontent.com/18469214/93407237-f0ac6e00-f891-11ea-98b7-6ddebd725a91.jpg)
 
 This section needs to be accessible to the doctor inside ZQM: The Editor, so that they can preview and edit when making their version. It also needs to be accessible to the patient through the A.I. Hospital (public/private quests), A.I. Chat (Game Together integration), and the A.I. Pirate Ship (public quest board, aka Jobs Board). 
+
+## Patient View of PvP Question & Answer Game
+
+
+INSERT Game Image and Info HERE
+
 
 ## Q & A
 1. Can the physician automate the match game? 
