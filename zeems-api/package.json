@@ -15,7 +15,7 @@
     "@types/node": "^14.0.26",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.27",
+    "mongoose": "^5.13.20",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   }
